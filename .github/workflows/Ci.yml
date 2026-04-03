@@ -74,7 +74,7 @@ jobs:
       DATABASE_URL: mysql+pymysql://github:github@127.0.0.1:3306/bichofull_test
       SECRET_KEY: github_actions_secret_key
       ALGORITHM: HS256
-      ACCESS_TOKEN_EXPIRE_MINUTES: 30
+      ACCESS_TOKEN_EXPIRE: 30
 
     steps:
       - name: Baixar código
