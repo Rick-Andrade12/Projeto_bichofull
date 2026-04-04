@@ -7,15 +7,17 @@ from alembic import context
 
 import sys
 import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from database import Base
 
-from models.usuario import Usuario
-from models.carteira import Carteira
-from models.aposta import Aposta
-from models.bicho import Bicho
-from models.sorteio import Sorteio
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))) 
+from backend.models.usuario import Usuario
+from backend.models.carteira import Carteira
+from backend.models.aposta import Aposta
+from backend.models.bicho import Bicho
+from backend.models.sorteio import Sorteio
+ 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
