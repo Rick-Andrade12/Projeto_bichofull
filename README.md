@@ -126,7 +126,7 @@ git clone https://github.com/Rick-Andrade12/Projeto_bichofull.git
 Entre na pasta:
 
 ```bash
-cd bicho_full2
+cd Projeto_bichofull
 ```
 
 > Caso o nome do repositório local esteja diferente, entre na pasta correspondente.
