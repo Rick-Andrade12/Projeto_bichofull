@@ -2,10 +2,10 @@
 #uvicorn main:app --reload   ==rodar o servidor 
 
 from fastapi import FastAPI
-from routes.auth_routes import auth_router
-from routes.apostas_routes import aposta_router
-from routes.sorteio_routes import sorteio_router
-from routes.carteira_routes import carteira_router
+from backend.routes.auth_routes import auth_router
+from backend.routes.apostas_routes import aposta_router
+from backend.routes.sorteio_routes import sorteio_router
+from backend.routes.carteira_routes import carteira_router
 
 from fastapi.middleware.cors import CORSMiddleware
 
