@@ -172,6 +172,7 @@ ALGORITHM = HS256
 ACCESS_TOKEN_EXPIRE= 65
 
 ```
+lembre de mudar a url para a que voce ta usando
 
 ---
 
