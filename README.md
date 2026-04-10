@@ -139,37 +139,6 @@ Crie um banco de dados vazio chamado:
 ```sql
 bicho_full2
 ```
-### 2.1 Insira na tabela bichos:
-
-```
-INSERT INTO bichos (grupo, nome) VALUES
-(1, 'Avestruz'),
-(2, 'Águia'),
-(3, 'Burro'),
-(4, 'Borboleta'),
-(5, 'Cachorro'),
-(6, 'Cabra'),
-(7, 'Carneiro'),
-(8, 'Camelo'),
-(9, 'Cobra'),
-(10, 'Coelho'),
-(11, 'Cavalo'),
-(12, 'Elefante'),
-(13, 'Galo'),
-(14, 'Gato'),
-(15, 'Jacaré'),
-(16, 'Leão'),
-(17, 'Macaco'),
-(18, 'Porco'),
-(19, 'Pavão'),
-(20, 'Peru'),
-(21, 'Touro'),
-(22, 'Tigre'),
-(23, 'Urso'),
-(24, 'Veado'),
-(25, 'Vaca');
-
-```
 
 Certifique-se de que o serviço do **MySQL** está rodando.
 
@@ -190,9 +159,11 @@ Se necessário, altere para as credenciais do seu ambiente. Exemplo:
 ```python
 DATABASE_URL = "mysql+pymysql://root:sua_senha@127.0.0.1:3306/bicho_full2"
 ```
-```
-No backend adicione o arquivo .env na raiz do backend
+Lembre de mudar a url no alembic.ini
 
+### No backend adicione o arquivo .env na raiz do backend
+
+```
 DATABASE_URL = "mysql+pymysql://root@127.0.0.1:3307/bicho"
 
 SECRECT_KEY= c127e2e52cd775dc771188d11790e1bf
@@ -235,6 +206,41 @@ Aplique as migrations:
 ```bash
 alembic upgrade head
 ```
+
+No workbench adicione na tabela bichos:
+
+```bash
+### 2.1 Insira na tabela bichos:
+
+INSERT INTO bichos (grupo, nome) VALUES
+(1, 'Avestruz'),
+(2, 'Águia'),
+(3, 'Burro'),
+(4, 'Borboleta'),
+(5, 'Cachorro'),
+(6, 'Cabra'),
+(7, 'Carneiro'),
+(8, 'Camelo'),
+(9, 'Cobra'),
+(10, 'Coelho'),
+(11, 'Cavalo'),
+(12, 'Elefante'),
+(13, 'Galo'),
+(14, 'Gato'),
+(15, 'Jacaré'),
+(16, 'Leão'),
+(17, 'Macaco'),
+(18, 'Porco'),
+(19, 'Pavão'),
+(20, 'Peru'),
+(21, 'Touro'),
+(22, 'Tigre'),
+(23, 'Urso'),
+(24, 'Veado'),
+(25, 'Vaca');
+
+```
+
 
 🚀 Inicie o servidor Backend:
 
