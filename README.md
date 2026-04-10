@@ -190,6 +190,17 @@ Se necessário, altere para as credenciais do seu ambiente. Exemplo:
 ```python
 DATABASE_URL = "mysql+pymysql://root:sua_senha@127.0.0.1:3306/bicho_full2"
 ```
+```
+No backend adicione o arquivo .env na raiz do backend
+
+DATABASE_URL = "mysql+pymysql://root@127.0.0.1:3307/bicho"
+
+SECRECT_KEY= c127e2e52cd775dc771188d11790e1bf
+
+ALGORITHM = HS256
+ACCESS_TOKEN_EXPIRE= 65
+
+```
 
 ---
 
